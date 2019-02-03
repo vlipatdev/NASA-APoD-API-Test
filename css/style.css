@@ -48,8 +48,7 @@ body {
 #title {
 	font-size: 3rem;
 	font-weight: 600;
-	margin: 1rem 0 0 0;
-
+	margin-top: 1rem;
 }
 
 #copyright {
@@ -92,7 +91,7 @@ body {
 
 	#title {
 		font-size: 2rem;
-		margin: .5rem 0 0 0;
+		margin-top: .5rem;
 	}
 
 	#copyright {
