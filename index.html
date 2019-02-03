@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>NASA APOD API Test</title>
+	<meta name="author" content="Val">
+  	<meta name="description" content="NASA APOD API Test Page">
+  	<meta name="keywords" content="NASA, APOD">
+  	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1 id="APOD">Astronomy Picture of the Day</h1>
+		<p id="date"></p>
+	</header>
+	<main>
+		<figure>
+			<a id="image-container">
+				<img id="image">
+			</a>
+		</figure>
+		<figure id="video-container">
+			<iframe id="video">This browser does not support the iframe tag.</iframe>	
+		</figure>
+		<h2 id="title"></h2>
+		<p id="copyright">Image Credit and Copyright: <span id="owner"></span><p>
+		<p id="explanation"></p>
+	</main>
+	<footer id="footer">
+		<a href="https://github.com/vlipatdev?tab=repositories">
+			<img id="github-logo" src="img/github.svg">
+		</a>
+	</footer>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script src="js/script.js"> </script>
+
+</html>

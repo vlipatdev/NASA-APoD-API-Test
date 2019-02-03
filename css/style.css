@@ -1,0 +1,101 @@
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+::-moz-selection {
+	color: #fff;
+	background-color: #000;
+}
+::selection {
+	color: #fff;
+	background-color: #000;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	padding: 5vh 7.5vw;
+}
+
+#APOD {
+	font-weight: 300;
+	font-size: 5rem;
+	margin: 1rem auto;
+}
+
+#image {
+	margin-top: 2rem;
+	width: 100%;
+}
+
+#video {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	height: 360px;
+	width: 640px;
+}
+
+#title {
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 1rem 0 0 0;
+
+}
+
+#copyright {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	font-style: italic;
+}
+
+#explanation {
+	margin: 2rem 0 5rem 0;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+#footer {
+	text-align: center;
+}
+
+#github-logo {
+	height: 4rem;
+}
+
+@media (max-width: 768px) {
+	#APOD {
+		font-size: 3.5rem;
+	}
+
+	#date {
+		font-size: 1.2rem;
+	}
+
+	#video {
+		height: 180px;
+		width: 320px;
+	}
+
+	#title {
+		font-size: 2rem;
+		margin: .5rem 0 0 0;
+	}
+
+	#copyright {
+		font-size: 1rem;
+	}
+
+	#explanation {
+		font-size: 1.4rem;
+	}
+}
