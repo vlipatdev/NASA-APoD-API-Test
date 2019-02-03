@@ -1,5 +1,5 @@
 $.ajax({
-	url: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY, //Apply for an API Key: https://api.nasa.gov/index.html#apply-for-an-api-key
+	url: 'https://api.nasa.gov/planetary/apod?api_key=H0SZyM87XABTNLMJyMApX41QSQn4tbBjI5bs1Pg7, //Apply for an API Key: https://api.nasa.gov/index.html#apply-for-an-api-key
 	success: function(data) {
 		if(data.media_type === 'image') {
 			$('#video-container').css('display', 'none');
