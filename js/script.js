@@ -23,7 +23,7 @@ $.ajax({
 	},
 
 	error: function() {
-		$('#title').text('An error has occurred.');
+		$('#APOD').text('An error has occurred.');
 		$('#copyright').text('');
 
 	}
