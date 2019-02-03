@@ -68,6 +68,10 @@ body {
 	text-align: center;
 }
 
+#footer:hover, #footer:active {
+	transform: scale(1.2);
+}
+
 #github-logo {
 	height: 4rem;
 }
