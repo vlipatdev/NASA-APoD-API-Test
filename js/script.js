@@ -31,5 +31,6 @@ $.ajax({
 
 	error: function() {
 		$('#APOD').text('An error has occurred. Refresh the page.');
+		$('#loading').css('display', 'none');
 	}
 })
