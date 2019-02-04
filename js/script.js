@@ -3,9 +3,15 @@ $.ajax({
 	success: function(data) {
 		if(data.media_type === 'image') {
 			$('#video-container').css('display', 'none');
-			$('#image-container').attr('href', data.url); 
-			$('#image').attr('src', data.url);
 			$('#image').attr('alt', data.title);
+			$('#image').attr('src', data.url);
+
+			if('hdurl' in data) {
+				$('#image-container').attr('href', data.hdurl); 
+			} else {
+				$('#image-container').attr('href', data.url); 
+			}
+
 		} else {
 			$('#image-container').css('display', 'none'); 
 			$('#video').attr('src', data.url);
@@ -24,7 +30,6 @@ $.ajax({
 
 	error: function() {
 		$('#APOD').text('An error has occurred.');
-		$('#copyright').text('');
-
+		$('#copyright').css('display', 'none');
 	}
 })
