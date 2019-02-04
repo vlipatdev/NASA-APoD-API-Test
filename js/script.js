@@ -18,18 +18,18 @@ $.ajax({
 		}
 
 		if('copyright' in data) {
-			$('#owner').text(data.copyright);
+			$('#copyright').text('Image Credit and Copyright: ' + data.copyright);
 		} else {
-			$('#owner').text('Public Domain');
+			$('#copyright').text('Public Domain');
 		}
 
 		$('#title').text(data.title);
+		$('#loading').css('display', 'none');
 		$('#date').text(data.date);
 		$('#explanation').text(data.explanation);
 	},
 
 	error: function() {
-		$('#APOD').text('An error has occurred.');
-		$('#copyright').css('display', 'none');
+		$('#APOD').text('An error has occurred. Refresh the page.');
 	}
 })
