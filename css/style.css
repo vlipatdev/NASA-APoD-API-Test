@@ -41,7 +41,7 @@ body {
 
 #video {
 	display: block;
-	margin: 0 auto;
+	margin: 2rem auto 0 auto;
 	border: none;
 	height: 360px;
 	width: 640px;
