@@ -28,9 +28,10 @@ $.ajax({
 			$('#copyright').text('Public Domain');
 		}
 
+		var todayDate = new Date(data.date).toString().slice(4,15);
 		$('#title').text(data.title);
 		$('#loading').css('display', 'none');
-		$('#date').text(data.date);
+		$('#date').text(todayDate);
 		$('#explanation').text(data.explanation);
 	},
 
