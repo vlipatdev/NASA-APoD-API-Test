@@ -17,6 +17,9 @@
 
 <body>
 	<header>
+		<svg id="darkmode-icon">
+			<use href="img/sprite.svg#icon-moon-fill"></use>
+		</svg>
 		<h1 id="APOD">Astronomy Picture of the Day</h1>
 		<p id="loading">Getting data from NASA...</p>
 		<p id="date"></p>
@@ -26,15 +29,17 @@
 			<a id="image-container"><img id="image"></a>
 		</figure>
 		<figure id="video-container">
-			<iframe id="video" allowfullscreen>This browser does not support the iframe tag.</iframe>	
+			<iframe id="video" allowfullscreen>This browser does not support the iframe tag.</iframe>
 		</figure>
 		<h2 id="title"></h2>
 		<p id="copyright"><p>
 		<p id="explanation"></p>
 	</main>
 	<footer id="footer">
-		<a title= "Check out the code at GitHub" href="https://github.com/vlipatdev/NASA-APoD-API-Test">
-			<img id="github-logo" alt="github logo" src="img/github.svg">
+		<a title= "Check out code at GitHub" href="https://github.com/vlipatdev/NASA-APoD-API-Test">
+			<svg id="github-logo">
+				<use href="img/sprite.svg#icon-github"></use>
+			</svg>
 		</a>
 	</footer>
 

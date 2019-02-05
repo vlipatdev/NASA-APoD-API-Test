@@ -28,10 +28,27 @@ body {
 	padding: 5vh 7.5vw;
 }
 
+.body-darkmode {
+	background-color: #000;
+	color: #777777;
+}
+
+.svg-darkmode {
+	fill: #777777;
+}
+
+#darkmode-icon {
+	height: 2rem;
+	width: 2rem;
+	display: block;
+	margin-left: auto;
+	cursor: pointer;
+}
+
 #APOD {
 	font-weight: 300;
 	font-size: 5rem;
-	margin: 1rem auto 0 auto;
+	margin: 2rem auto .5rem auto;
 }
 
 #image {
@@ -87,11 +104,13 @@ body {
 
 #github-logo {
 	height: 4rem;
+	width: 4rem;
 }
 
 @media screen and (max-width: 768px) {
 	#APOD {
 		font-size: 3.5rem;
+		margin-top: 1.5rem;
 	}
 
 	#date, #loading {
