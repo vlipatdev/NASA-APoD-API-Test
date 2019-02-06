@@ -30,11 +30,11 @@ body {
 
 .body-darkmode {
 	background-color: #000;
-	color: #777777;
+	color: #fff;
 }
 
 .svg-darkmode {
-	fill: #777777;
+	fill: #fff;
 }
 
 #darkmode-icon {
