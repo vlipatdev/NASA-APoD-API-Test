@@ -2,7 +2,7 @@ html {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 62.5%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	padding: 5vh 7.5vw;
 }
 
@@ -47,8 +47,8 @@ body {
 
 #APOD {
 	font-weight: 300;
-	font-size: 4rem;
-	margin: 2rem auto .5rem auto;
+	font-size: 5rem;
+	margin: 2rem 0 .5rem 0;
 }
 
 #image {
@@ -79,14 +79,14 @@ body {
 }
 
 #copyright {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	line-height: 1.5;
 	font-style: italic;
 }
 
 #explanation {
 	margin: 2rem 0 5rem 0;
-	line-height: 1.5;
+	line-height: 1.7;
 	text-align: justify;
 }
 
@@ -108,8 +108,8 @@ body {
 }
 
 #github-logo {
-	height: 4rem;
-	width: 4rem;
+	height: 3rem;
+	width: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -119,7 +119,7 @@ body {
 	}
 
 	#date, #loading {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	#title {
@@ -128,7 +128,7 @@ body {
 	}
 
 	#copyright {
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	#explanation {
