@@ -96,10 +96,15 @@ body {
 	-o-transition: all 1s;
 	transition: all 1s;
 }
-#footer:hover, #footer:active {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
+#footer:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+#footer:active {
+	-webkit-transform: scale(.95);
+	-ms-transform: scale(.95);
+	transform: scale(.95);
 }
 
 #github-logo {
