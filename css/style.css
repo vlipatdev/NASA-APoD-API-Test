@@ -29,12 +29,12 @@ body {
 }
 
 .body-darkmode {
-	background-color: #000;
-	color: #fff;
+	background-color: #23272A;
+	color: #f7f7f7;
 }
 
 .svg-darkmode {
-	fill: #fff;
+	fill: #f7f7f7;
 }
 
 #darkmode-icon {
