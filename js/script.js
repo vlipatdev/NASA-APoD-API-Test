@@ -23,15 +23,22 @@ $.ajax({
 			$('#copyright').text('Public Domain');
 		}
 
-		var todayDate = new Date(data.date).toString().slice(4,15);
+		var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+		];
+		var todayDate = new Date(data.date);
+		function dateFormat(d) {
+		  return monthNames[todayDate.getMonth()] + ' ' + todayDate.getDate() + ', ' + todayDate.getFullYear();
+		}
+
 		$('#title').text(data.title);
 		$('#loading').css('display', 'none');
-		$('#date').text(todayDate);
+		$('#date').text(dateFormat(todayDate));
 		$('#explanation').text(data.explanation);
 	},
 
 	error: function() {
 		$('#APOD').text('An error has occurred. Refresh the page.');
 		$('#loading').css('display', 'none');
+		$('#darkmode-icon').css('display', 'none');
 	}
 })
