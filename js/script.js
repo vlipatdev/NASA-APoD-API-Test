@@ -23,11 +23,10 @@ $.ajax({
 			$('#copyright').text('Public Domain');
 		}
 
-		var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-		];
+		var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		var todayDate = new Date(data.date);
 		function dateFormat(d) {
-		  return monthNames[todayDate.getMonth()] + ' ' + todayDate.getDate() + ', ' + todayDate.getFullYear();
+		 return monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
 		}
 
 		$('#title').text(data.title);
