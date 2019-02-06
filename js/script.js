@@ -8,14 +8,9 @@ $.ajax({
 	success: function(data) {
 		if(data.media_type === 'image') {
 			$('#video-container').css('display', 'none');
+			$('#image-container').attr('href', data.hdurl);
 			$('#image').attr('alt', data.title);
 			$('#image').attr('src', data.url);
-
-			if('hdurl' in data) {
-				$('#image-container').attr('href', data.hdurl);
-			} else {
-				$('#image-container').attr('href', data.url);
-			}
 
 		} else {
 			$('#image-container').css('display', 'none');
