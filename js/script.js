@@ -4,7 +4,7 @@ $('#darkmode-icon').click(function() {
 })
 
 $.ajax({
-	url: 'https://api.nasa.gov/planetary/apod?api_key=H0SZyM87XABTNLMJyMApX41QSQn4tbBjI5bs1Pg7', //Apply for an API Key: https://api.nasa.gov/index.html#apply-for-an-api-key
+	url: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', //Apply for an API Key: https://api.nasa.gov/index.html#apply-for-an-api-key
 	success: function(data) {
 		if(data.media_type === 'image') {
 			$('#video-container').css('display', 'none');
@@ -26,7 +26,7 @@ $.ajax({
 		var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		var todayDate = new Date(data.date);
 		function dateFormat(d) {
-		 return monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+			return monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
 		}
 
 		$('#title').text(data.title);
@@ -38,6 +38,5 @@ $.ajax({
 	error: function() {
 		$('#APOD').text('An error has occurred. Refresh the page.');
 		$('#loading').css('display', 'none');
-		$('#darkmode-icon').css('display', 'none');
 	}
 })
