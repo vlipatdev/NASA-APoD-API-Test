@@ -1,6 +1,6 @@
 document.querySelector('#darkmode-icon').addEventListener('click', () => {
 	document.body.classList.toggle('body-darkmode');
-	Array.from(document.querySelectorAll('svg')).map(el => el.classList.toggle('svg-darkmode')); //not working
+	Array.from(document.querySelectorAll('svg')).map(el => el.classList.toggle('svg-darkmode'));
 });
 
 axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
