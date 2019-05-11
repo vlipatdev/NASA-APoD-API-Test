@@ -6,7 +6,6 @@ document.querySelector('#darkmode-icon').addEventListener('click', () => {
 axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 	.then(result => {
 		const data = result.data
-		console.log(data.data)
 
 		if(data.media_type ==='image') {
 			document.querySelector('#video-container').style.display = 'none';
@@ -26,7 +25,6 @@ axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 
 		const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		const todayDate = new Date(data.date);
-		console.log(todayDate);
 		const dateFormat = d => `${monthNames[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 
 		document.querySelector('#title').textContent = data.title;
