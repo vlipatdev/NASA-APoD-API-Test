@@ -1,4 +1,4 @@
-document.querySelector('#darkmode-icon').addEventListener('click', () => {
+document.querySelector('.darkmode-button').addEventListener('click', () => {
 	document.body.classList.toggle('body-darkmode');
 	Array.from(document.querySelectorAll('svg')).map(el => el.classList.toggle('svg-darkmode'));
 });

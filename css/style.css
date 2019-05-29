@@ -37,12 +37,18 @@ body {
 	fill: #f7f7f7;
 }
 
-#darkmode-icon {
+.darkmode-button {
 	height: 2rem;
 	width: 2rem;
 	display: block;
 	margin-left: auto;
-	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+#darkmode-icon {
+	height: 100%;
+	width: 100%;
 }
 
 #APOD {
