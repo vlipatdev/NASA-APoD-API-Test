@@ -14,7 +14,7 @@ axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 			document.querySelector('#image').setAttribute('src', data.url);
 		} else {
 			document.querySelector('#image-container').style.display = 'none';
-			document.querySelector('#video').setAttribute('src', data.hdurl);
+			document.querySelector('#video').setAttribute('src', data.url);
 		};
 
 		if('copyright' in data) {
