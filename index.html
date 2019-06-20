@@ -7,7 +7,7 @@
 	<meta name="author" content="Val Lipat">
   	<meta name="description" content="NASA Astronomy Picture of the Day">
   	<meta name="keywords" content="NASA, APOD">
-	<title>NASA APOD API</title>
+	<title>NASA APOD</title>
 
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -18,29 +18,31 @@
 
 <body>
 	<header>
-		<button class="darkmode-button" aria-label="dark mode">
-			<svg id="darkmode-icon">
+		<button class="darkmode-btn" aria-label="dark mode">
+			<svg class="darkmode-icon">
 				<use href="img/sprite.svg#icon-moon-fill"></use>
 			</svg>
 		</button>
-		<h1 id="APOD">Astronomy Picture of the Day</h1>
-		<p id="loading">Getting data from NASA...</p>
-		<p id="date"></p>
+		<h1 class="heading">Astronomy Picture of the Day</h1>
+		<p class="loading">Getting data from NASA...</p>
+		<p class="date"></p>
 	</header>
+
 	<main>
 		<figure>
-			<a id="image-container"><img id="image"></a>
+			<a class="image-wrapper"><img class="image"></a>
 		</figure>
-		<figure id="video-container">
-			<iframe id="video" allowfullscreen></iframe>
+		<figure class="video-wrapper">
+			<iframe class="video" allowfullscreen></iframe>
 		</figure>
-		<h2 id="title"></h2>
-		<p id="copyright"><p>
-		<p id="explanation"></p>
+		<h2 class="title"></h2>
+		<p class="copyright"><p>
+		<p class="explanation"></p>
 	</main>
-	<footer id="footer">
+
+	<footer class="footer">
 		<a title= "Check out code at GitHub" href="https://github.com/vlipatdev/nasa-apod-api" aria-label="GitHub">
-			<svg id="github-logo">
+			<svg class="github-logo">
 				<use href="img/sprite.svg#icon-github"></use>
 			</svg>
 		</a>
