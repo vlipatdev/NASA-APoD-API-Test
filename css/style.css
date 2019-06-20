@@ -118,7 +118,7 @@ body {
 	fill: #f7f7f7;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.heading {
 		font-size: 3.5rem;
 		margin-top: 1.5rem;
