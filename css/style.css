@@ -86,6 +86,9 @@ body {
 	margin: 2rem 0 5rem 0;
 	line-height: 2;
 	text-align: justify;
+	-webkit-hyphens: auto;
+  	-ms-hyphens: auto;
+  	hyphens: auto;
 }
 
 .footer {
