@@ -83,7 +83,7 @@ body {
 
 .explanation {
 	margin: 2rem 0 5rem 0;
-	line-height: 1.7;
+	line-height: 2;
 	text-align: justify;
 }
 
@@ -120,7 +120,7 @@ body {
 
 @media screen and (max-width: 768px) {
 	.heading {
-		font-size: 3.5rem;
+		font-size: 3rem;
 		margin-top: 1.5rem;
 	}
 
