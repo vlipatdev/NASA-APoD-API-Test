@@ -4,10 +4,10 @@ document.querySelector('.darkmode-btn').addEventListener('click', () => {
 });
 
 axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-	.then(result => {
+	.then((result) => {
 		const data = result.data;
 
-		if (data.media_type ==='image') {
+		if (data.media_type === 'image') {
 			document.querySelector('.video-wrapper').style.display = 'none';
 			document.querySelector('.image-wrapper').setAttribute('href', data.hdurl);
 			document.querySelector('.image').setAttribute('alt', data.title);
@@ -15,13 +15,13 @@ axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 		} else {
 			document.querySelector('.image-wrapper').style.display = 'none';
 			document.querySelector('.video').setAttribute('src', data.url);
-		};
+		}
 
 		if ('copyright' in data) {
 			document.querySelector('.copyright').textContent = `Image Credit and Copyright: ${data.copyright}`;
 		} else {
 			document.querySelector('.copyright').textContent = 'Public Domain';
-		};
+		}
 
 		const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		const todayDate = new Date(data.date);
