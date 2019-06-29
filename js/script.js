@@ -1,11 +1,11 @@
 document.querySelector('.darkmode-btn').addEventListener('click', () => {
 	document.body.classList.toggle('body-darkmode');
-	Array.from(document.querySelectorAll('svg')).map(el => el.classList.toggle('svg-darkmode'));
+	document.querySelectorAll('svg').forEach(el => el.classList.toggle('svg-darkmode'));
 });
 
 axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 	.then((result) => {
-		const data = result.data;
+		const { data } = result;
 
 		if (data.media_type === 'image') {
 			document.querySelector('.video-wrapper').style.display = 'none';
