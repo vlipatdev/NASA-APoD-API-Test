@@ -45,7 +45,7 @@ body {
 .heading {
 	font-weight: 900;
 	font-size: 4rem;
-	margin: 2rem 0 .5rem 0;
+	margin: 2rem 0 0.5rem 0;
 	line-height: 1;
 }
 
@@ -87,8 +87,8 @@ body {
 	line-height: 1.8;
 	text-align: justify;
 	-webkit-hyphens: auto;
-  	-ms-hyphens: auto;
-  	hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 .footer {
@@ -98,9 +98,9 @@ body {
 .github-logo {
 	height: 3rem;
 	width: 3rem;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
-	transition: all .2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 }
 .github-logo:hover {
 	-webkit-transform: scale(1.2);
@@ -114,7 +114,7 @@ body {
 }
 
 .body-darkmode {
-	background-color: #23272A;
+	background-color: #23272a;
 	color: #f7f7f7;
 }
 
@@ -128,13 +128,14 @@ body {
 		margin-top: 1.5rem;
 	}
 
-	.date, .loading {
+	.date,
+	.loading {
 		font-size: 1.4rem;
 	}
 
 	.title {
 		font-size: 2rem;
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.copyright {
