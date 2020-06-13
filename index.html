@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="author" content="vlipatdev" />
+		<meta name="description" content="NASA Astronomy Picture of the Day" />
+		<meta name="keywords" content="NASA, APOD" />
+		<title>NASA APOD</title>
 
-<head>
-	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="author" content="Val Lipat">
-  	<meta name="description" content="NASA Astronomy Picture of the Day">
-  	<meta name="keywords" content="NASA, APOD">
-	<title>NASA APOD</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+		<script src="js/script.js" defer></script>
+		<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	</head>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
-	<script src="js/script.js" defer></script>
-	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-</head>
+	<body>
+		<header>
+			<button class="darkmode-btn" aria-label="dark mode">
+				<svg class="darkmode-icon">
+					<use href="img/sprite.svg#icon-moon-fill"></use>
+				</svg>
+			</button>
+			<h1 class="heading">Astronomy Picture of the Day</h1>
+			<p class="loading">Getting data from NASA...</p>
+			<p class="date"></p>
+		</header>
 
-<body>
-	<header>
-		<button class="darkmode-btn" aria-label="dark mode">
-			<svg class="darkmode-icon">
-				<use href="img/sprite.svg#icon-moon-fill"></use>
-			</svg>
-		</button>
-		<h1 class="heading">Astronomy Picture of the Day</h1>
-		<p class="loading">Getting data from NASA...</p>
-		<p class="date"></p>
-	</header>
+		<main>
+			<figure>
+				<a class="image-wrapper"><img class="image" /></a>
+			</figure>
+			<figure class="video-wrapper">
+				<iframe class="video" allowfullscreen></iframe>
+			</figure>
+			<h2 class="title"></h2>
+			<p class="copyright"></p>
+			<p></p>
+			<p class="explanation"></p>
+		</main>
 
-	<main>
-		<figure>
-			<a class="image-wrapper"><img class="image"></a>
-		</figure>
-		<figure class="video-wrapper">
-			<iframe class="video" allowfullscreen></iframe>
-		</figure>
-		<h2 class="title"></h2>
-		<p class="copyright"><p>
-		<p class="explanation"></p>
-	</main>
-
-	<footer class="footer">
-		<a title= "Check out code at GitHub" href="https://github.com/vlipatdev/nasa-apod-api" aria-label="GitHub">
-			<svg class="github-logo">
-				<use href="img/sprite.svg#icon-github"></use>
-			</svg>
-		</a>
-	</footer>
-</body>
-
+		<footer class="footer">
+			<a
+				title="Check out code at GitHub"
+				href="https://github.com/vlipatdev/nasa-apod-api"
+				aria-label="GitHub"
+			>
+				<svg class="github-logo">
+					<use href="img/sprite.svg#icon-github"></use>
+				</svg>
+			</a>
+		</footer>
+	</body>
 </html>
